@@ -13,3 +13,16 @@ let nome: any
 nome = 'Marcio'
 nome = 8
 console.log("o nome e: " + nome)  //any aceita mudar igual a var em javascript
+
+
+//Funcoes
+
+let ehMaiorDeIdade = function (idade: number): boolean{
+    return idade > 17
+}
+
+let idade = 15
+//Atenção. Perceba abaixo a Template String e não é aspas simples e sim o simbolo da crase. Permite utilizar expressoes ${}
+console.log(`Diga, ${idade} anos é maior de idade? ${ehMaiorDeIdade(idade) ? ' Sim' : 'Não'}` )
+
+
