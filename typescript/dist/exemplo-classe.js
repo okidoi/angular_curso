@@ -2,6 +2,8 @@
 exports.__esModule = true;
 var base_ships_1 = require("./base-ships");
 var starfighters_1 = require("./starfighters");
+var _ = require("lodash");
+console.log(_.pad("Teste", 40, "="));
 //metodos locais - fora da classe
 function goodForTheJob(ship) {
     return ship.cargoContainers > 2;

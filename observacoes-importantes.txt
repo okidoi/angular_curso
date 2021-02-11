@@ -33,8 +33,34 @@
 4 - Para compilar somente 1 arquivo especifico de typescripts para javascript
 #########################################################################
 
-1.1 - Abra um novo terminal no VS Code ou no command e vá até a pasta onde estão seus arquivos .typescripts
-1.2 - Digite o comando abaixo:
+4.1 - Abra um novo terminal no VS Code ou no command e vá até a pasta onde estão seus arquivos .typescripts
+4.2 - Digite o comando abaixo:
 > tsc nomeDoArquivo.ts      //ira gerar nomeDoArquivo.js
 
+#########################################################################
+5 - Para importar uma biblioteca
+#########################################################################
 
+5.1. Iniciar o node que ira criar um arquivo chamado package.json
+> npm init -f        //vai dar waning pois não iremos preencher tudo.
+> npm install --save lodash@4.14        //npm vai importar essa versao e criara uma pasta chamada node_modules\lodash
+> npm install --save-dev @types/lodash@4.14   //so serve para desenvolvimento pois em runtime será javascript ou @latest
+
+5.2. agora para usar o lodash (é so um exemplo, nem precisariamos dessa bibilioteca de fato agora)
+É necessario para alguns plugins deixar explicito uma propriedade no tsconfig
+ficando assim:
+
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "outDir": "dist",    //diretorio de saida onde ele salvara o arquivo compilado .js
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+        //,"noEmitOnError": true   //padrao é false. Agora, com true ele não gera o arquivo.js
+    }
+}
+
+//Agora importamos o loadsh no arquivo typescript que quisermos assim:
+
+import * as _ from 'lodash'

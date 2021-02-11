@@ -1,6 +1,10 @@
 import {Spacecraft, Containership, Smugglership} from './base-ships'
 import {MillenniumFalcon} from './starfighters'
 
+import * as _ from 'lodash'
+console.log(_.pad("Teste", 40, "="))
+
+
 //metodos locais - fora da classe
 function goodForTheJob(ship: Containership): boolean{
     return ship.cargoContainers > 2

@@ -1,7 +1,10 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        "outDir": "dist"    //diretorio de saida onde ele salvara o arquivo compilado .js
+        "outDir": "dist",    //diretorio de saida onde ele salvara o arquivo compilado .js
+        "typeRoots": [
+            "node_modules/@types"
+        ]
         //,"noEmitOnError": true   //padrao é false. Agora, com true ele não gera o arquivo.js
     }
 }
