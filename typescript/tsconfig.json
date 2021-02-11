@@ -1,0 +1,9 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "outDir": "dist"    //diretorio de saida onde ele salvara o arquivo compilado .js
+        //,"noEmitOnError": true   //padrao é false. Agora, com true ele não gera o arquivo.js
+    }
+}
+
+//para aulas de typescript somente. para Angular não é necessário
