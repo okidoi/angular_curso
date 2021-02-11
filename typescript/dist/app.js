@@ -16,3 +16,4 @@ var ehMaiorDeIdade = function (idade) {
 var idade = 15;
 //Atenção. Perceba abaixo a Template String e não é aspas simples e sim o simbolo da crase. Permite utilizar expressoes ${}
 console.log("Diga, " + idade + " anos \u00E9 maior de idade? " + (ehMaiorDeIdade(idade) ? ' Sim' : 'Não'));
+var teste = 10;

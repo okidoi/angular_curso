@@ -25,4 +25,4 @@ let idade = 15
 //Atenção. Perceba abaixo a Template String e não é aspas simples e sim o simbolo da crase. Permite utilizar expressoes ${}
 console.log(`Diga, ${idade} anos é maior de idade? ${ehMaiorDeIdade(idade) ? ' Sim' : 'Não'}` )
 
-
+let teste = 10

@@ -1,0 +1,40 @@
+#########################################################################
+1 - Para ligar o transpile que converte os arquivos typescripts (.ts) para javascript (.js)
+#########################################################################
+
+1.1 - Abra um novo terminal no VS Code ou no command e vá até a pasta onde estão seus arquivos .typescripts
+1.2 - Digite o comando abaixo:
+> tsc -w      //este comando ira ler as propriedades de compilação contidas no seu arquivo tsconfig.json e salvar na pasta de destino lá indicadas
+
+
+
+
+#########################################################################
+2 - Para executar o exemplo javascript 
+#########################################################################
+
+2.1 - Abra um novo Terminal ou vá até o existente - aba powershell 
+2.2  - Digite o comando abaixo:
+> node .\nomeDaPastaDestino\nomeDoArquivoASerExecutado      //não é obrigatorio a extensão do arquivo
+> nome .\dist\exemplo-classe                                //exemplo usando um arquivo real 
+
+
+#########################################################################
+3 - Para instalar o pacote typescript
+#########################################################################
+
+3.1 - Abra um novo terminal 
+3.2  - Digite o comando abaixo:
+> npm install typescript -g     //realiza a instação de forma global
+> tsc -v                        //mostra a versao do typescripts
+
+
+#########################################################################
+4 - Para compilar somente 1 arquivo especifico de typescripts para javascript
+#########################################################################
+
+1.1 - Abra um novo terminal no VS Code ou no command e vá até a pasta onde estão seus arquivos .typescripts
+1.2 - Digite o comando abaixo:
+> tsc nomeDoArquivo.ts      //ira gerar nomeDoArquivo.js
+
+
